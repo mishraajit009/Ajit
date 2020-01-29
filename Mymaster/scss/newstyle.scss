@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan, 2020, 10:09:25 PM
+    Author     : Ajit
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+$primary-color: linear-gradient(to right, rgb(255,0,0),rgb(212,85,0));
+html, body {
+    height: 100%;
+}
+
+/* CSS only for examples not required for centering */
+.main-container {
+    height: 100%;
+}
+
+.note {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    background: #eee;
+    max-width: 360px;
+    border: 1px dotted #bbb;
+}
+
+/* show border around full height container */
+.h-100 {
+    border: 1px dotted #cc2222;
+}
+h1{
+    font-size: 32px;
+}
+.bgimg{
+    background: url(../img/school.jpg);
+    width: 100%;
+    height: 90vh;
+}
+.base-class{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.top-row{
+    margin: 5px 0;
+    background-color: $primary-color;
+}
+.basic-margin{
+    margin: 0px 5%;
+}
+
+
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ .base-class{
+    width: 70%;
+    margin: 0 0;
+    text-align: start;
+}
+.basic-margin{
+      margin: 0px 8%;
+}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .base-class{
+    width: 50%;
+      
+}
+.basic-margin{
+      margin: 0px 10%;
+}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .base-class{
+    width: 40%;
+}
+.basic-margin{
+      margin: 0px 150px;
+}
+}
+ 
